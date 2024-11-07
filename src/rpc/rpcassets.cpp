@@ -79,17 +79,21 @@ UniValue createasset(const JSONRPCRequest &request) {
                 "\nExamples:\n"
                 + HelpExampleCli("createasset",
                                  "'{\"name\":\"TEST ASSET\", \"updatable\":true, \"is_root\":true, \"isunique\":false, \"maxMintCount\":10, \n"
-                                 "'{\"name\":\"test asset\", \"updatable\":true, \"is_root\":true, \"isunique\":false, \"maxMintCount\":10, \n"
-                                 "\"decimalpoint\":2, \"referenceHash\":\"\", \"type\":0, \"targetAddress\":\"yQPzaDmnF3FtRsoWijUN7aZDcEdyNAcmVk\", \n"
-                                 "\"issueFrequency\":0, \"amount\":10000,\"ownerAddress\":\"yRyiTCKfqMG2dQ9oUvs932TjN1R1MNUTWM\"}'")
-                + HelpExampleRpc("createasset",
-                                 "'{\"name\":\"test asset\", \"updatable\":true, \"is_root\":true, \"isunique\":false, \"maxMintCount\":10, \n"
                                  "\"decimalpoint\":2, \"referenceHash\":\"\", \"type\":0, \"targetAddress\":\"yQPzaDmnF3FtRsoWijUN7aZDcEdyNAcmVk\", \n"
                                  "\"issueFrequency\":0, \"amount\":10000,\"ownerAddress\":\"yRyiTCKfqMG2dQ9oUvs932TjN1R1MNUTWM\"}'")
                 + HelpExampleCli("createasset",
                                  "'{\"name\":\"sub test asset\", \"is_root\":false, \"root_name\":\"TEST ASSET\", \"isunique\":false, \"maxMintCount\":10, \n"
                                  "\"decimalpoint\":2, \"referenceHash\":\"\", \"type\":0,  \"targetAddress\":\"yQPzaDmnF3FtRsoWijUN7aZDcEdyNAcmVk\", \n"
                                  "\"issueFrequency\":0, \"amount\":10000,\"ownerAddress\":\"yRyiTCKfqMG2dQ9oUvs932TjN1R1MNUTWM\"}'")
+                + HelpExampleRpc("createasset",
+                                 "'{\"name\":\"TEST ASSET\", \"updatable\":true, \"is_root\":true, \"isunique\":false, \"maxMintCount\":10, \n"
+                                 "\"decimalpoint\":2, \"referenceHash\":\"\", \"type\":0, \"targetAddress\":\"yQPzaDmnF3FtRsoWijUN7aZDcEdyNAcmVk\", \n"
+                                 "\"issueFrequency\":0, \"amount\":10000,\"ownerAddress\":\"yRyiTCKfqMG2dQ9oUvs932TjN1R1MNUTWM\"}'")
+                + HelpExampleRpc("createasset",
+                                 "'{\"name\":\"sub test asset\", \"is_root\":false, \"root_name\":\"TEST ASSET\", \"isunique\":false, \"maxMintCount\":10, \n"
+                                 "\"decimalpoint\":2, \"referenceHash\":\"\", \"type\":0,  \"targetAddress\":\"yQPzaDmnF3FtRsoWijUN7aZDcEdyNAcmVk\", \n"
+                                 "\"issueFrequency\":0, \"amount\":10000,\"ownerAddress\":\"yRyiTCKfqMG2dQ9oUvs932TjN1R1MNUTWM\"}'")
+                
         );
 
     if (getAssetsFees() == 0) {
